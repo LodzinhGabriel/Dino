@@ -44,11 +44,11 @@ function setup() {
   //tamanho da tela é a largura e a altura da janela de reprodução deixando ele responsivo, tive que criar 3 fundos como uma solução mais fácil no momento, já que o desenho do background é muuuuiiiiito pequendo na direção x.
   createCanvas(windowWidth, windowHeight);
   //sprite do fundo dividido em 3 etapas
-  for (var i = 40; i < windowWidth; i=i+windowWidth/2) 
+  /*for (var i = 40; i < windowWidth; i=i+windowWidth/2) 
 {
   var Fundo = createSprite(i, windowHeight/2, windowWidth, windowHeight);
   Fundo.addImage(imagemDeFundo);
-}
+}*/
   
     
   // sprite do sol
@@ -96,7 +96,7 @@ function setup() {
 
 function draw() {
   
-  background(255);
+  background(imagemDeFundo);
   
   //text("Pontuação: "+ pontuacao,30,50);
   //como o fundo tem imagem, coloquei o texto do placar abaixo do drawSprites, assim ele é printado na tela após o desenho dos sprites. 
