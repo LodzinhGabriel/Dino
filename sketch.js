@@ -207,7 +207,7 @@ function gerarNuvens() {
 
 function gerarObstaculos(){
  if (frameCount % 60 === 0){
-   var obstaculo = createSprite(witdth,height - 95,20,30);
+   var obstaculo = createSprite(width,height - 95,20,30);
     obstaculo.setCollider('circle',0,0,45)
     // obstaculo.debug = true
   
